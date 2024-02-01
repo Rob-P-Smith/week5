@@ -1,0 +1,10 @@
+{
+  "name": "jshmo/328/week5",
+  "authors": [{
+    "name": "Rob Smith",
+    "email": "smith.rob@student.greenriver.edu"
+  }],
+  "require":{
+    "bcosca/fatfree-core": "dev-master"
+  }
+}

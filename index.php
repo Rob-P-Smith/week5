@@ -11,7 +11,7 @@ $f3 = Base::instance();
 
 $f3->route('GET /', function ($f3) {
 
-    $f3->set('veggies',array('tomato','corn','pea'));
+    $f3->set('veggies',array('tomato','corn','pea', 33));
     $f3->set('fruits',array('apple','orange','banana'));
     $f3->set('radius','10');
     $f3->set ('color','purple');

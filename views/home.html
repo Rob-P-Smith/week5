@@ -7,9 +7,25 @@
 </head>
 <body>
 <div class="container"></div>
-<h1>Testing Hive Access</h1>
-<p>Logged in as {{@username}}</p>
-<p>Using password {{@password}}</p>
+    <h1>Testing Hive Access</h1>
+<hr>
+    <p>Logged in as: {{@username}}</p>
+    <p>Using password: {{@password}}</p>
+    <p>Your color is: {{@color}} </p>
+    <p>Circle circumference of 10" radius circle: {{2*pi()*@radius}}</p>
+    <p><strong>Your Fruits are:</strong></p>
+<hr>
+    <repeat group="{{@fruits}}" value="{{@fruit}}"><p>{{trim(@fruit)}}</p></repeat>
+        <p><strong>Your Veggies are:</strong></p>
+<hr>
+    <repeat group="{{@veggies}}" value="{{@veggie}}">
+        <ol>
+            <li>{{@veggie}}</li>
+        </ol>
+    </repeat>
+<hr>
+    <p>My favorite food is: <strong>{{@food}}</strong></p>
+<hr>
 </div>
 </body>
 </html>
